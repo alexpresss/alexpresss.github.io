@@ -8638,6 +8638,20 @@ h1, h2, h3, h4, h5,
     position: relative;
     z-index: 1; }
 
+.social-icons li{
+  display: inline;
+}
+
+ul.social-icons li span{
+  font-size: 30px;
+  padding-right: 40px;
+}
+
+ul.social-icons{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
 .ftco-about ul.about-info {
   display: inline-block;
   padding: 0;
