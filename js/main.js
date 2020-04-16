@@ -238,7 +238,7 @@
 	contentWayPoint();
 
 	// magnific popup
-	$('.image-popup').magnificPopup({
+	$('.image-popup-zoom').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
     closeBtnInside: false,
@@ -256,16 +256,6 @@
       enabled: true,
       duration: 300 // don't foget to change the duration also in CSS
     }
-  });
-
-  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-
-    fixedContentPos: false
   });
 
 
