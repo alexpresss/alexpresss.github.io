@@ -430,11 +430,17 @@ $(function() {
 });
 
 $(function(){
-	function calculateAge(birthday) { // birthday is a date
-		var ageDifMs = Date.now() - birthday.getTime();
-		var ageDate = new Date(ageDifMs); // miliseconds from epoch
-		return Math.abs(ageDate.getUTCFullYear() - 1970);
-	}
+	function calculateAge(birthDate) { // birthday is a date
+		var otherDate = new Date();
+		var years = (otherDate.getFullYear() - birthDate.getFullYear());
+
+		if (otherDate.getMonth() < birthDate.getMonth() || 
+			otherDate.getMonth() == birthDate.getMonth() && otherDate.getDate() < birthDate.getDate()) {
+			years--;
+		}
+
+		return years;
+		}
 	
-	$("#age").html(calculateAge(new Date(1997,6,7)));
+	$("#age").html(calculateAge(new Date(1997,5,7)));
 });

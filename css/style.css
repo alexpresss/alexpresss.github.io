@@ -8665,7 +8665,7 @@ ul.social-icons{
       .ftco-about ul.about-info li span:first-child {
         font-weight: 600;
         color: #000000;
-        width: 130px; }
+        width: 150px; }
 
 .ftco-about .counter-wrap .text p {
   font-size: 20px; }
@@ -9232,7 +9232,7 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.image-popup {
+.image-popup-zoom {
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
   cursor: zoom-in; }
